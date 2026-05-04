@@ -1,0 +1,174 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "whitechocolate.vsrg_converter",
+	"name": "vsrg_converter",
+	"version": "v1.0.0",
+	"developer": "whitechocolate",
+	"description": "VSRG Overlay for Geometry Dash",
+	"settings": {
+		"split-cps-2k": {
+			"type": "float",
+			"name": "2K Split CPS",
+			"description": "CPS threshold to split into 2 lanes",
+			"default": 5.0
+		},
+		"split-cps-3k": {
+			"type": "float",
+			"name": "3K Split CPS",
+			"description": "CPS threshold to split into 3 lanes",
+			"default": 7.0
+		},
+		"split-cps-4k": {
+			"type": "float",
+			"name": "4K Split CPS",
+			"description": "CPS threshold to split into 4 lanes",
+			"default": 9.0
+		},
+		"fully-random-mode": {
+			"type": "bool",
+			"name": "Fully Random Mode",
+			"description": "Randomize lanes even at low CPS. If disabled, defaults to 1 key at low CPS.",
+			"default": false
+		},
+		"comfort-mode": {
+			"type": "bool",
+			"name": "Comfort Mode",
+			"description": "If enabled, pressing one key prevents other keys from coming out (no multi-jacks).",
+			"default": false
+		},
+		"skin-folder": {
+			"type": "string",
+			"name": "Skin Folder",
+			"description": "Name of the folder inside skins/ to use for note sprites (e.g., default)",
+			"default": "default"
+		},
+		"scroll-speed": {
+			"type": "float",
+			"name": "Default Scroll Speed",
+			"description": "Global default scroll speed",
+			"default": 2.0
+		},
+		"lane-x-offset": {
+			"type": "float",
+			"name": "Lane X Offset",
+			"description": "Horizontal distance from the right edge of the screen",
+			"default": -120.0
+		},
+		"lane-y-offset": {
+			"type": "float",
+			"name": "Lane Y Offset",
+			"description": "Vertical distance from the bottom edge of the screen",
+			"default": 20.0
+		},
+		"lane-height": {
+			"type": "float",
+			"name": "Lane Height",
+			"description": "The visual height of the lane box",
+			"default": 400.0
+		},
+		"note-width": {
+			"type": "float",
+			"name": "Note Width",
+			"description": "The width of each note",
+			"default": 14.0
+		},
+		"key-lane-1": {
+			"type": "keybind",
+			"name": "Lane 1 Key",
+			"default": { "key": "D" }
+		},
+		"key-lane-2": {
+			"type": "keybind",
+			"name": "Lane 2 Key",
+			"default": { "key": "F" }
+		},
+		"key-lane-3": {
+			"type": "keybind",
+			"name": "Lane 3 Key",
+			"default": { "key": "J" }
+		},
+		"key-lane-4": {
+			"type": "keybind",
+			"name": "Lane 4 Key",
+			"default": { "key": "K" }
+		},
+		"key-speed-up": {
+			"type": "keybind",
+			"name": "Speed Up Key",
+			"default": { "key": "up" }
+		},
+		"key-speed-down": {
+			"type": "keybind",
+			"name": "Speed Down Key",
+			"default": { "key": "down" }
+		},
+		"key-offset-up": {
+			"type": "keybind",
+			"name": "Offset Plus Key",
+			"default": { "key": "right" }
+		},
+		"key-offset-down": {
+			"type": "keybind",
+			"name": "Offset Minus Key",
+			"default": { "key": "left" }
+		},
+		"combo-y-offset": {
+			"type": "float",
+			"name": "Combo Y Offset",
+			"default": 0.0
+		},
+		"hit-bar-y-offset": {
+			"type": "float",
+			"name": "Accuracy Bar Offset",
+			"description": "Vertical offset for the Hit Error Bar",
+			"default": 15.0
+		},
+		"error-ms-y-offset": {
+			"type": "float",
+			"name": "Error MS Y Offset",
+			"description": "Vertical offset for the Error MS text label",
+			"default": 25.0
+		},
+		"hit-window-fps": {
+			"type": "int",
+			"name": "Hit Window FPS",
+			"description": "Base FPS for hit window. If 240: Gold <= 1/240s, White <= 2/240s, Green <= 4/240s, Blue <= 8/240s, Purple <= 12/240s",
+			"default": 240
+		},
+		"release-miss-threshold": {
+			"type": "float",
+			"name": "Release Miss Threshold (ms)",
+			"description": "Notes shorter than this won't trigger a MISS on release. Set to -1 to disable release MISS judgment entirely.",
+			"default": 100.0
+		},
+		"hit-sound-volume": {
+			"type": "float",
+			"name": "Hit Sound Volume",
+			"description": "Volume for hit.wav in your skin folder (0 to 100)",
+			"default": 50.0
+		},
+		"lane-opacity": {
+			"type": "float",
+			"name": "Lane Press Opacity",
+			"description": "Opacity of the lane when pressed (0.0 to 1.0)",
+			"default": 0.25
+		},
+		"auto-mode": {
+			"type": "bool",
+			"name": "Auto Mode",
+			"description": "Automatically play the macro perfectly",
+			"default": false
+		},
+		"key-auto-mode": {
+			"type": "keybind",
+			"name": "Toggle Auto Mode Key",
+			"default": { "key": "P" }
+		}
+	}
+}
